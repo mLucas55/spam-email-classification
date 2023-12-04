@@ -1,5 +1,4 @@
-# spam-email-classification
-A machine learning model that can predict if an email is spam.
+# Spam Email Classification Model
 
 * Given an email this model can predict with ~80% accuracy if it is spam.
 
