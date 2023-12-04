@@ -7,7 +7,7 @@
 
 * Trained on this data set: https://www.kaggle.com/datasets/purusinghvi/email-spam-classification-dataset/data
 
-* The dat set already preprocessed the emails, but there were still some abnormalities that were fixed in this notebook such as removing invalid substrings.
+* The data set already preprocessed the emails, but there were still some abnormalities that were fixed in this notebook such as removing invalid substrings.
 
 * The data set had a slight imbalance so down sampling was used.
   
