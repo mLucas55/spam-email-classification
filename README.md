@@ -1,4 +1,5 @@
 # Spam Email Classification Model
+!! Work in progress !!
 
 * Given an email this model can predict with ~80% accuracy if it is spam.
 
