@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The objective of this project is to create and train a machine learning model that can predict if an email is spam or not. I wanted to learn about computer text "recognition" through deep learning and further practice TensorFlow.
+There are two objectives for this project:
+  - Create and train a machine learning model that can predict if an email is spam or not.
+  - Learn about text classifcation and functional models
 
 Computers understand numbers better than letters; that is why I used a Google's BERT transformer to effectively convert strings into numbers. BERT can take a string and produce a context-aware vector that is then processed in a functional neural network, ultimately leading to a prediction.
 
