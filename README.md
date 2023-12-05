@@ -17,3 +17,4 @@ The data set has 83,488 total sample emails with a binary classificaiton colum
   - 1 = spam
   - 43910 spam
   - 39538 not spam
+The data set can be found online [here](https://drive.google.com/file/d/1ElqSIk-nJp8yKlz9ZGyVoKQ7e4OE1mpB/view?usp=sharing)
