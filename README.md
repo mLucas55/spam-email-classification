@@ -1,5 +1,4 @@
 # Spam Email Classification Model
-!! Work in progress !!
 
 * Given an email, this model can predict with ~80% accuracy if it is spam.
 
@@ -12,3 +11,18 @@
 * The data set had a slight imbalance so down sampling was used.
   
 * This is my first functional model which was created to continue learning about machine learning.
+
+
+!! Work in progress !!
+
+## Introduction
+
+The objective of this project is to create and train a machine learning model that can predict if an email is spam or not. I wanted to learn about computer text "recognition" through deep learning and further practice TensorFlow.
+
+Computers understand numbers better than letters; that is why I used a Google's BERT transformer to effectively convert strings into numbers. BERT can take a string and produce a context-aware vector that is then processed in a functional neural network, ultimately leading to a prediction.
+
+An existing transformer was used as the goal wasn't text classification in general, rather it was spam email classification. BERT provides a simple to implement and robust well suited for this task
+
+## Selection of Data
+
+The model was developed and trained 
