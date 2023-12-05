@@ -6,9 +6,7 @@ There are two objectives for this project:
   - Create and train a machine learning model that can predict if an email is spam or not.
   - Learn about text classifcation and functional models
 
-Computers understand numbers better than letters; that is why I used a Google's BERT transformer to effectively convert strings into numbers. BERT can take a string and produce a context-aware vector that is then processed in a functional neural network, ultimately leading to a prediction.
-
-An existing transformer was used as the goal wasn't text classification in general, rather it was spam email classification. BERT provides a simple to implement and robust well suited for this task
+An existing transformer was used as the goal wasn't text classification in general, rather it was spam email classification. BERT provides a simple to implement and robust well suited for this task. BERT can take a string and produce a context-aware vector that is then processed in a functional neural network, ultimately leading to a prediction.
 
 ## Selection of Data
 
