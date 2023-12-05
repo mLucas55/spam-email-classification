@@ -25,4 +25,4 @@ An existing transformer was used as the goal wasn't text classification in gener
 
 ## Selection of Data
 
-The model was developed and trained 
+The model was developed and trained in a Colab notebook which is available [here] (https://github.com/mLucas55/spam-email-classification/blob/main/code/spam-email-classification.ipynb).
