@@ -67,6 +67,10 @@ Model Training:
      - Increasing dropout didn't solve this which means it might not have been overfitting
      - This could be due to low quality data -> maybe try training with a different data set
 3. At the end of training the metrics were as follow: loss: 0.4429 - accuracy: 0.8286 - precision: 0.8298
+
+Training Results:
+
+
 4. Evaluating the model on unseen data, the metrics were as follow: loss: 0.4701 - accuracy: 0.7971 - precision: 0.8881
     - Loss went up and accuracy went down while precission went up sharply.
     - It seems the model is slihglty struggling to generalize
