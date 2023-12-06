@@ -12,7 +12,7 @@ The model was developed and trained in a Colab notebook which is available [here
 
 ## Selection of Data
 
-The data set can be found online [here](https://drive.google.com/file/d/1ElqSIk-nJp8yKlz9ZGyVoKQ7e4OE1mpB/view?usp=sharing) .
+The data set can be found online [here](https://drive.google.com/file/d/1ElqSIk-nJp8yKlz9ZGyVoKQ7e4OE1mpB/view?usp=sharing).
 
 The data set has 83,488 total sample emails with a binary classificaiton colum.
   - 0 = not spam
@@ -45,27 +45,27 @@ Tools:
 
 Setup Steps:
 
-1. Import csv file into a DataFrame using pandas
-2. Observe data's cleanliness and balance
-    - Found invalid strings -> replaced them with empty strings (covered in "Selection of Data" section)
-    - Data had slightly more spam than non spam so I downsampled the data and created a new balanced DataFrame
-3. Split balanced data into training and testing sets
-    - Stratify = true -> maintain proportion of label distribution in train and test data
+1. Import csv file into a DataFrame using pandas.
+2. Observe data's cleanliness and balance.
+    - Found invalid strings -> replaced them with empty strings (covered in "Selection of Data" section).
+    - Data had slightly more spam than non spam so I downsampled the data and created a new balanced DataFrame.
+3. Split balanced data into training and testing sets.
+    - Stratify = true -> maintain proportion of label distribution in train and test data.
 
 Model Creation Steps:
 
-1. Create a keras input layer that takes an email as an input
-2. Use bert_preprocesser to tokenize text
-3. use bert_encoder to create a context aware vector that represents the meaning of words in the context of a sentance
-4. Create a keras dropout layer (.1) on the output of bert_encoder to reduce overfitting
-5. Create a keras dense layer as the output layer using a sigmoid activation function for binary classification
+1. Create a keras input layer that takes an email as an input.
+2. Use bert_preprocesser to tokenize text.
+3. use bert_encoder to create a context aware vector that represents the meaning of words in the context of a sentance.
+4. Create a keras dropout layer (.1) on the output of bert_encoder to reduce overfitting.
+5. Create a keras dense layer as the output layer using a sigmoid activation function for binary classification.
 
 Model Training: 
 
 1. Trained the model with various sample sizes, batch sizes, dropout %, epochs, etc.
-2. The model went down in accuracy when provided with larger sample sizes
-     - Increasing dropout didn't solve this which means it might not have been overfitting
-     - This could be due to low quality data -> maybe try training with a different data set
+2. The model went down in accuracy when provided with larger sample sizes.
+     - Increasing dropout didn't solve this which means it might not have been overfitting.
+     - This could be due to low quality data -> maybe try training with a different data set.
 
 Training Results:
 
@@ -77,7 +77,7 @@ Evaluation Results:
 
 ![Evaluation Screenshot](./graphs/Evaluation-Metrics.png)
 
-The model is ~80% accurate and 88% precise on unseen data. Loss -, Accuracy -, Precission +
+The model is ~80% accurate and 88% precise on unseen data. Loss -, Accuracy -, Precission +.
   - High precision percantage reveals the model is conservative in labeling emails as spam (fewer false positives).
   - When comparing the evaluatation accuracy to training accuracy there is a .0315∆ or 3.1%∆. This shows the model could struggle with generalizing.
-    - Increase in loss % during evaluation supports this claim
+    - Increase in loss % during evaluation supports this claim.
