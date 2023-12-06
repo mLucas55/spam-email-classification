@@ -81,3 +81,9 @@ The model is ~80% accurate and 88% precise on unseen data. Difference from train
   - High precision percantage reveals the model is conservative in labeling emails as spam (fewer false positives).
   - When comparing the evaluatation accuracy to training accuracy there is a -.0315∆ or -3.1%∆. This shows the model could struggle with generalizing.
     - Increase in loss % during evaluation supports this claim.
+
+## Discussion
+
+Overall the model is considerably accurate with an even higher precession. The high precission is nice when the model is telling you an email is spam, however you can't rely on precission alone. This is because precision focuses on the accuracy of positive predictions (True Positives) but ignores instances that are actually positive that were incorrectly predicted as negative (False Negatives).
+
+This is where our accuracy metric comes into play which considers everything. As mentioned in results, based off of loss % and acccuracy % deltas from training to evaluation, the model slightly struggles to generalize.
