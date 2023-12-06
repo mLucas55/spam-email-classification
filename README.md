@@ -70,3 +70,9 @@ Model Training:
 4. Evaluating the model on unseen data, the metrics were as follow: loss: 0.4701 - accuracy: 0.7971 - precision: 0.8881
     - Loss went up and accuracy went down while precission went up sharply.
     - It seems the model is slihglty struggling to generalize
+
+## Results
+
+The model is ~80% accurate and 88% precise. 
+  - This precision percantage reveals the model is conservative in labeling emails as spam (fewer false positives). 
+  - When comparing the evaluatation accuracy to training accuracy there is a .0315∆ or 3.1%∆ revealing the model could struggle with generalizing.
