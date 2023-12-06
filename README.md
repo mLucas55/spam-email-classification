@@ -61,3 +61,12 @@ Model Creation Steps:
 5. Create a keras dense layer as the output layer using a sigmoid activation function for binary classification
 
 Model Training: 
+
+1. Trained the model with various sample sizes, batch sizes, dropout %, epochs, etc.
+2. The model went down in accuracy when provided with larger sample sizes
+     - Increasing dropout didn't solve this which means it might not have been overfitting
+     - This could be due to low quality data -> maybe try training with a different data set
+3. At the end of training the metrics were as follow: loss: 0.4429 - accuracy: 0.8286 - precision: 0.8298
+4. Evaluating the model on unseen data, the metrics were as follow: loss: 0.4701 - accuracy: 0.7971 - precision: 0.8881
+    - Loss went up and accuracy went down while precission went up sharply.
+    - It seems the model is slihglty struggling to generalize
