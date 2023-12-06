@@ -6,7 +6,7 @@ There are two objectives for this project:
   - Create and train a machine learning model that can predict if an email is spam or not.
   - Learn about text classifcation and functional models.
 
-Google's BERT transformer was used. BERT takes a string and produces a context-aware vector that I then processed in the functional neural network, ultimately leading to a prediction.
+Google's BERT transformer was used. BERT takes a string and produces a context-aware vector that is processed in the functional neural network, ultimately leading to a prediction.
 
 The model was developed and trained in a Colab notebook which is available [here](https://github.com/mLucas55/spam-email-classification/blob/main/code/spam-email-classification.ipynb).
 
