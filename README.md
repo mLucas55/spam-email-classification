@@ -23,3 +23,7 @@ Data Preview:
 
 ![Data screenshot](./graphs/Data-Head.png)
 
+Label Distrubtion:
+
+![Bar screenshot](./graphs/Label-Balance.png)
+
