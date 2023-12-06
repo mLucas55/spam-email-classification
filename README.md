@@ -60,6 +60,8 @@ Model Creation Steps:
 4. Create a keras dropout layer (.1) on the output of bert_encoder to reduce overfitting.
 5. Create a keras dense layer as the output layer using a sigmoid activation function for binary classification.
 
+![Model screenshot](./graphs/Model-Screenshot.png)
+
 Model Training: 
 
 1. Trained the model with various sample sizes, batch sizes, dropout %, epochs, etc.
