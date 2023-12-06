@@ -47,7 +47,7 @@ Setup Steps:
 
 1. Import csv file into a DataFrame using pandas
 2. Observe data's cleanliness and balance
-    - Found invalid strings -> replaced them with empty strings
+    - Found invalid strings -> replaced them with empty strings (covered in "Data Selection" section)
     - Data had slightly more spam than non spam so I downsampled the data and created a new balanced DataFrame
 3. Split balanced data into training and testing sets
     - Stratify = true -> maintain proportion of label distribution in train and test data
