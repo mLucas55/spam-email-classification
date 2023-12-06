@@ -66,17 +66,17 @@ Model Training:
 2. The model went down in accuracy when provided with larger sample sizes
      - Increasing dropout didn't solve this which means it might not have been overfitting
      - This could be due to low quality data -> maybe try training with a different data set
-3. At the end of training the metrics were as follow: loss: 0.4429 - accuracy: 0.8286 - precision: 0.8298
 
 Training Results:
 
-
-4. Evaluating the model on unseen data, the metrics were as follow: loss: 0.4701 - accuracy: 0.7971 - precision: 0.8881
-    - Loss went up and accuracy went down while precission went up sharply.
-    - It seems the model is slihglty struggling to generalize
+![Results Screenshot](./graphs/Training-Metrics.png)
 
 ## Results
 
-The model is ~80% accurate and 88% precise. 
+Evaluation Results:
+
+![Evaluation Screenshot](./graphs/Evaluation-Metrics.png)
+
+The model is ~80% accurate and 88% precise on unseen data. 
   - This precision percantage reveals the model is conservative in labeling emails as spam (fewer false positives). 
   - When comparing the evaluatation accuracy to training accuracy there is a .0315∆ or 3.1%∆ revealing the model could struggle with generalizing.
