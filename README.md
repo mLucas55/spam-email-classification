@@ -28,7 +28,7 @@ Label Distrubtion:
 
 ![Bar screenshot](./graphs/Label-Balance.png)
 
-The data set is a combination of two other spam email data sets. Along with combining data sets the creater also preprocessed all data by removing HTML elements, subjects, and actual email addresses.
+The data set is a combination of two other email data sets. Along with combining data sets, the creater also preprocessed all data by removing HTML elements, subjects, and actual email addresses.
 
 However there seemed to be an artifact in the data as a result of the preprocessing: The string 'escapenumber' occured multiple times in essentially all emails. I used str.replace() to replace 'escapenumber' with an empty string. This caused a moderate rise in models accuracy of ~4%.
 
