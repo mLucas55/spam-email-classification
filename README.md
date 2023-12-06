@@ -86,4 +86,14 @@ The model is ~80% accurate and 88% precise on unseen data. Difference from train
 
 Overall the model is considerably accurate with an even higher precession. The high precission is nice when the model is telling you an email is spam, however you can't rely on precission alone. This is because precision focuses on the accuracy of positive predictions (True Positives) but ignores instances that are actually positive that were incorrectly predicted as negative (False Negatives).
 
-This is where our accuracy metric comes into play which considers everything. As mentioned in results, based off of loss % and acccuracy % deltas from training to evaluation, the model slightly struggles to generalize.
+This is where our accuracy metric comes into play which considers everything. As mentioned in results, based off of loss % and acccuracy % deltas from training to evaluation, the model slightly struggles to generalize. Ways to improve it's ability to generalize include further experimenting with sample size and dropout. I also want to see if using early stopping could be beneficial.
+
+One unexpected "challenge" or annoyance I faced was the raw time it took to train the model. As seen in the training logs, each epoch took around 5 minutes, and there was 10 epochs totaling in around 50-55 minutes to fully train. As a result I had to be very purposful and logical when making changes to maxamize my time.
+
+## Summary
+
+This project saw the creation of a spam email classification model using TensorFlow and Google's BERT transformer. Through data sanitization, and various ML training practicies, the model achieved ~80% accuracy and demonstrated high precision in identifying spam emails.
+
+Further optimization involves experimenting with sample sizes, dropout rates, and considering early stopping to improve the models ability to generalize.
+
+("Model" Count: 20)
