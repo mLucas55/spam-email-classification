@@ -35,8 +35,24 @@ However there seemed to be an artifact in the data as a result of the preprocess
 ## Methods
 
 Tools:
-  - TensorFlow: Machine learning library
+  - TensorFlow: Machine learning library used for model creation
+  - BERT: Text transformer
+  - Sklearn: Machline learning library used for creating test and train sets
   - Pandas: Data manipulation 
   - Seaborn + Matplotlib: Data visualization
   - Colab: Development notebook
   - GitHub: Version control
+
+Setup Steps:
+
+1. Import csv file into a DataFrame using pandas
+2. Observe data's cleanliness and balance
+    - Found invalid strings -> replaced them with empty strings
+    - Data had slightly more spam than non spam so I downsampled the data and created a new balanced DataFrame
+3. Split balanced data into training and testing sets
+    - Stratify = true -> maintain proportion of label distribution in train and test data
+
+Model Creation Steps:
+
+1. Create a keras input layer that takes an email as an input
+2. 
