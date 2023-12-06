@@ -80,7 +80,7 @@ Evaluation Results:
 ![Evaluation Screenshot](./graphs/Evaluation-Metrics.png)
 
 The model is ~80% accurate and 88% precise on unseen data. Difference from training: | - Loss | - Accuracy | + Precission |
-  - A high precision percantage is good but also reveals the model is conservative in labeling emails as spam (fewer false positives).
+  - A high precision percantage is good but also reveals the model mayb be conservative in labeling emails as spam (fewer false positives).
   - When comparing the evaluatation accuracy to training accuracy there is a -.0315∆ or -3.1%∆. This shows the model could struggle with generalizing.
     - Increase in loss % during evaluation supports this claim.
 
