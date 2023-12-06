@@ -55,4 +55,9 @@ Setup Steps:
 Model Creation Steps:
 
 1. Create a keras input layer that takes an email as an input
-2. 
+2. Use bert_preprocesser to tokenize text
+3. use bert_encoder to create a context aware vector that represents the meaning of words in the context of a sentance
+4. Create a keras dropout layer (.1) on the output of bert_encoder to reduce overfitting
+5. Create a keras dense layer as the output layer using a sigmoid activation function for binary classification
+
+Model Training: 
