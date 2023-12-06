@@ -90,7 +90,7 @@ Overall the model is considerably accurate with an even higher precession. The h
 
 This is where our accuracy metric comes into play which considers everything. As mentioned in results, based off of loss % and acccuracy % deltas from training to evaluation, the model slightly struggles to generalize. Ways to improve it's ability to generalize include further experimenting with sample size and dropout. I also want to see if using early stopping could be beneficial.
 
-One unexpected "challenge" or annoyance I faced was the raw time it took to train the model. As seen in the training logs, each epoch took around 5 minutes, and there was 10 epochs totaling in around 50-55 minutes to fully train. As a result I had to be very purposful and logical when making changes to maxamize my time.
+One unexpected "challenge" or annoyance I faced was the raw time it took to train the model. As seen in the training logs, each epoch took around 5 minutes to complete. With 10 epochs it took around 50-55 minutes to fully train the model. As a result I had to be very purposful and logical when making changes to maxamize my time.
 
 ## Summary
 
@@ -98,4 +98,4 @@ This project saw the creation of a spam email classification model using TensorF
 
 Further optimization involves experimenting with sample sizes, dropout rates, and considering early stopping to improve the models ability to generalize.
 
-("Model" Count: 20)
+("Model" Count: 21)
