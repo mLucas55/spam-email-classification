@@ -67,7 +67,7 @@ Model Training:
 1. Trained the model with various sample sizes, batch sizes, dropout %, epochs, etc.
 2. The model went down in accuracy when provided with larger sample sizes.
      - Increasing dropout didn't solve this which means it might not have been overfitting.
-     - This could be due to low quality data -> maybe try training with a different data set.
+     - If it's not overfitting, this could be due to low quality data -> maybe try training with a different data set.
 
 Training Results:
 
@@ -80,7 +80,7 @@ Evaluation Results:
 ![Evaluation Screenshot](./graphs/Evaluation-Metrics.png)
 
 The model is ~80% accurate and 88% precise on unseen data. Difference from training: | - Loss | - Accuracy | + Precission |
-  - A high precision percantage is good but also reveals the model mayb be conservative in labeling emails as spam (fewer false positives).
+  - A high precision percantage is good but also reveals the model may be conservative in labeling emails as spam (fewer false positives).
   - When comparing the evaluatation accuracy to training accuracy there is a -.0315∆ or -3.1%∆. This shows the model could struggle with generalizing.
     - Increase in loss % during evaluation supports this claim.
 
